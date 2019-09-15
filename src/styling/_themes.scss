@@ -1,0 +1,79 @@
+@import './variable'; 
+
+@mixin light($width, $height) {
+    background-color: $cream; 
+    color: $black; 
+    width: $width; 
+    height: $height; 
+}
+
+@mixin pink($width, $height) {
+    background-color: $pink; 
+    color: $white; 
+    width: $width; 
+    height: $height; 
+}
+
+@mixin flexRow() {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+@mixin lightBtn() {
+    background-color: $cream; 
+    color: $black;
+    border-color: $pink; 
+
+    &:hover {
+        cursor: pointer; 
+        background-color: $pink; 
+        color: $cream; 
+    }
+}
+
+@mixin background_color() {
+    width: 100vw; 
+    height: 100vh; 
+    animation: 100000ms ease-in-out infinite color-change; 
+}
+
+@keyframes color-change {
+    0% {
+        background-color: $green; 
+    }
+    9% {
+        background-color: $cream; 
+    }
+    18% {
+        background-color: $teal; 
+    }
+    27% {
+        background-color: $cream;
+    }
+    36% {
+        background-color: $blue; 
+    }
+    45% {
+        background-color: $cream; 
+    }
+    54% {
+        background-color: $purple; 
+    }
+    63% {
+        background-color: $cream; 
+    }
+    72% {
+        background-color: $pink; 
+    }
+    81% {
+        background-color: $cream; 
+    }
+    90% {
+        background-color: $red; 
+    }
+    100% {
+        background-color: $cream; 
+    }
+}
